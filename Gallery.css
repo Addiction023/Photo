@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  color: #2c2c2c;
+  text-align: center;
+  padding: 0px;
+  user-select: none;
+}
+
+.container {
+  user-select: none;
+  margin: 2% auto;
+  max-width: 90%;
+  border: 2px solid #333;
+  border-radius: 12px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+#image {
+  width: 80%;
+  height: 650px;
+  margin: 25px auto;
+  border: 6px solid #222;
+  border-radius: 15px;
+  background-color: #c97abd;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 180%;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.preview {
+  width: 12%;
+  margin: 15px;
+  display: inline-block;
+  border: 6px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.1);
+}
+
+.preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #111; /* dark nav background */
+  gap: 20px; /* add space between logo and links */
+  position: sticky;
+  top: 0px;
+}
+
+.logo {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto; /* push links to the right */
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px; /* space between links */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #bbb;
+}
+
+.skip-link {
+  position: absolute;      /* allows moving it off screen */
+  top: -40px;              /* move above the viewport */
+  left: 0;
+  background: #fff;        /* white background */
+  color: #000;             /* black text */
+  padding: 8px 12px;
+  text-decoration: none;
+  z-index: 100;            /* keeps it on top */
+  transition: top 0.3s;    /* smooth slide effect */
+}
+
+.skip-link:focus {
+  top: 10px;               /* bring it into view */
+}
+
+.word {
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Gallery</title>
+  <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+     <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <nav class="navbar">
+        <div class="logo">Easy2Use</div>
+        <div class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="Gallery.html">Gallery </a>
+            <a href="Photo.html">Photo</a>
+        </div>
+    </nav>
+  <div id="image">Hover over an image below to display here.</div>
+  
+  <img class="preview" alt="AnimeWallPaper_1" src="images/1.jpg"
+       onmouseover="upDate(this)" onmouseout="undo()">
+  <img class="preview" alt="AnimeWallPaper_2" src="images/2.jpg"
+       onmouseover="upDate(this)" onmouseout="undo()">
+  <img class="preview" alt="AnimeWallPaper_3" src="images/3.jpg"
+       onmouseover="upDate(this)" onmouseout="undo()">
+
+  <script src="Gallery.js"></script>
+</body>
+</html>

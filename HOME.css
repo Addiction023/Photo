@@ -1,0 +1,91 @@
+body {
+  user-select: none;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #111; /* dark nav background */
+  gap: 20px; /* add space between logo and links */
+  position: sticky;
+  top: 0px;
+}
+
+.logo {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto; /* push links to the right */
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px; /* space between links */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #bbb;
+}
+.hero-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  gap: 90px;
+  margin-bottom: 30px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 80%; /* only affects grid images */
+  border-radius: 8px;
+  border: 3px solid #444;     /* dark gray border */
+  padding: 5px;               /* space between border and image */
+  border-radius: 10px;        /* rounded corners */
+  background-color: #fff;     /* background behind transparent images */
+  max-width: 100%;            /* responsive */
+  height: auto;
+  display: block;             /* prevents inline spacing issues */
+  margin: 10px auto;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.skip-link {
+  position: absolute;      /* allows moving it off screen */
+  top: -40px;              /* move above the viewport */
+  left: 0;
+  background: #fff;        /* white background */
+  color: #000;             /* black text */
+  padding: 8px 12px;
+  text-decoration: none;
+  z-index: 100;            /* keeps it on top */
+  transition: top 0.3s;    /* smooth slide effect */
+}
+
+.skip-link:focus {
+  top: 10px;               /* bring it into view */
+}
+
+.word {
+  text-align: center;
+}
+
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: scale(1.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
