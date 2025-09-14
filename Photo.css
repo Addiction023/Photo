@@ -60,22 +60,7 @@ body {
   color: #bbb;
 }
 
-.skip-link {
-  position: absolute;      /* allows moving it off screen */
-  top: -40px;              /* move above the viewport */
-  left: 0;
-  background: #fff;        /* white background */
-  color: #000;             /* black text */
-  padding: 8px 12px;
-  text-decoration: none;
-  z-index: 100;            /* keeps it on top */
-  transition: top 0.3s;    /* smooth slide effect */
-}
-
-.skip-link:focus {
-  top: 10px;               /* bring it into view */
-}
-
 .word {
   text-align: center;
+
 }
